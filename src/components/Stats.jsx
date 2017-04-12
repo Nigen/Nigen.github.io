@@ -1,24 +1,32 @@
 import React from 'react';
 
 function Stats(props) {
+  let total = props.todos.length;
+  let completed = props.todos.filter(todo => todo.completed).length;
+  let notCompleted = toal - completed;
+
     return (
       <table className="stats">
         <tbody>
           <tr>
               <th>Всего новостей:</th>
-              <td>3</td>
+              <td>{total}</td>
           </tr>
           <tr>
               <th>Прочитано: </th>
-              <td>1</td>
+              <td>{comleted}</td>
           </tr>
           <tr>
              <th>Осталось:</th>
-             <td>2</td>
+             <td>{notCompleted}</td>
     </tr>
   </tbody>
 </table>
     );
 }
+
+Stats.propTypes = {
+  todos: React.PropTypes.array.isRequired
+};
 
 export default Stats;
