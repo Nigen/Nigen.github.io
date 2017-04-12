@@ -1,8 +1,10 @@
 import React from 'react';
+import Stats from './stats';
 
 function Header(props) {
   return (
     <header>
+      <Stats />
       <h1>{props.title}!</h1>
     </header>
   );
