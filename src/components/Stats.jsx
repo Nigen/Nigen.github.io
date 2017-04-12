@@ -14,7 +14,7 @@ function Stats(props) {
           </tr>
           <tr>
               <th>Прочитано: </th>
-              <td>{comleted}</td>
+              <td>{completed}</td>
           </tr>
           <tr>
              <th>Осталось:</th>
